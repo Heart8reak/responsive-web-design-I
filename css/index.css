@@ -1,3 +1,177 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 
+* {
+    margin: 0;
+}
+
+/* 
+################################
+################################
+index Page
+################################ 
+################################ 
+*/
+
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header img {
+    width: 25%;
+}
+
+nav {
+    display: flex;
+    align-items: flex-end;
+}
+
+nav a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: grey;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px 0;
+}
+
+.banner-text {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.banner-text h1 {
+    font-size: 3.5em;
+}
+
+section.banner img {
+    width: 50%;
+}
+
+button {
+    margin: 25px 0 0;
+    padding: 5px 30px;
+    border: 1px solid black;
+    color: black;
+}
+
+hr {
+    border: 1px solid black;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    margin: 35px 0;
+}
+
+.top-content {
+    flex-basis: 47%;
+}
+
+img {
+    width: 100%;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 35px 0;
+}
+
+.bottom-content {
+    padding: 0 10px;
+}
+
+.bottom h4 {
+    margin-bottom: 15px;
+}
+
+.contact {
+    margin: 35px 0;
+}
+
+footer {
+    text-align: center;
+    margin: 40px 0;
+}
+
+
+/* 
+######################
+Media Queries
+###################### 
+*/
+
+@media (max-width: 800px) {
+    /* * {
+        background-color: aqua;
+    } */
+
+    .container {
+        width: 600px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+    }    
+
+    header img {
+        margin: 40px auto;
+    }
+
+    .banner {
+        margin: 5px 0 60px 0;
+    }
+
+    .banner img {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 400px;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;        
+    }
+
+    header nav a {
+        margin: 10px auto;
+        /* border-top: 1px solid grey;
+        width: 100%; */
+    }
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-content {
+    margin: 25px 0;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-content {
+    margin: 25px 0;
+}
