@@ -22,10 +22,11 @@ index Page
 header {
     display: flex;
     justify-content: space-between;
+    margin-top: 50px;
 }
 
 header img {
-    width: 25%;
+    width: 100%;
 }
 
 nav {
@@ -97,6 +98,24 @@ img {
     margin-bottom: 15px;
 }
 
+.top {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-content {
+    margin: 25px 0;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-content {
+    margin: 25px 0;
+}
+
 .contact {
     margin: 35px 0;
 }
@@ -156,7 +175,6 @@ section.facts {
 }
 
 div.text-left {
-	/* border: 1px solid red; */
 	width: 50%;
 	padding: 0 10px 25px 0;
 }
@@ -200,9 +218,16 @@ Media Queries
     header {
         display: flex;
         flex-direction: column-reverse;
+        text-align: center;
     }    
 
     header img {
+        width: 50%;
+        margin: 40px auto;
+    }
+
+    header a img.logo {
+        width: 50%;
         margin: 40px auto;
     }
 
@@ -228,25 +253,28 @@ Media Queries
 
     header nav a {
         margin: 10px auto;
-        /* border-top: 1px solid grey;
-        width: 100%; */
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content-content {
+        width: 100%;
+    }
+
+    .facts {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-left {
+        width: 100%;
+    }
+
+    .img-right {
+        width: 100%;
     }
 }
 
-.top {
-    display: flex;
-    flex-direction: column;
-}
-
-.top-content {
-    margin: 25px 0;
-}
-
-.bottom {
-    display: flex;
-    flex-direction: column;
-}
-
-.bottom-content {
-    margin: 25px 0;
-}
