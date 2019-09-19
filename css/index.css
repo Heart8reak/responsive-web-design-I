@@ -17,6 +17,7 @@ index Page
 .container {
     width: 800px;
     margin: 0 auto;
+    /* border: 1px solid pink; */
 }
 
 header {
@@ -26,18 +27,20 @@ header {
 }
 
 header img {
-    width: 100%;
+    width: 50%;
 }
 
 nav {
     display: flex;
     align-items: flex-end;
+    width: 100%;
 }
 
 nav a {
     margin: 0 20px;
     text-decoration: none;
     color: grey;
+    width: 100%;
 }
 
 .banner {
@@ -53,6 +56,8 @@ nav a {
 
 .banner-text h1 {
     font-size: 3.5em;
+    font-family: 'Bangers', cursive;
+
 }
 
 section.banner img {
@@ -124,6 +129,9 @@ footer {
     text-align: center;
     margin: 40px 0;
 }
+
+
+
 
 
 /* 
@@ -248,11 +256,17 @@ Media Queries
     header nav {
         display: flex;
         flex-direction: column;
-        margin: 0 auto;        
+        margin: 0 auto;   
     }
 
     header nav a {
-        margin: 10px auto;
+        margin: 0 auto;
+        padding: 20px 0;
+        border-bottom: 1px solid grey;
+    }
+
+    header nav a:first-child {
+        border-top: 1px solid grey;
     }
 
     .content {
